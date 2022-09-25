@@ -108,7 +108,7 @@ class AS_FedDAG(BaseLearner):
 
 class GS_FedDAG(BaseLearner):
 
-    def __init__(self, d,num_client,use_gpu=True, seed=1, graph_thres=0.5,
+    def __init__(self, d, num_client,use_gpu=True, seed=1, graph_thres=0.5,
                  num_hidden_layers=4, hidden_size=16,
                  l1_graph_penalty=2e-3, use_float64=False, lr=3e-2,
                  max_iter=25, iter_step=1000, init_iter=3, h_tol=1e-10,
