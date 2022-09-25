@@ -1,5 +1,46 @@
-# 算法
+# FedDAG: Federated DAG Structure Learning
 
+This repository contains an implementation of the federated DAG structure learning methods described in ["FedDAG: Federated DAG Structure Learning"](https://arxiv.org/abs/2112.03555).
 
-# 结果记录
-node=10, edge=20, rho_init=8e-2, rho_multiply=5
+If you find it useful, please consider citing:
+```bibtex
+@article{gao2021federated,
+  title={Federated Causal Discovery},
+  author={Gao, Erdun and Chen, Junjia and Shen, Li and Liu, Tongliang and Gong, Mingming and Bondell, Howard},
+  journal={arXiv preprint arXiv:2112.03555},
+  year={2021}
+}
+```
+
+## Requirements
+
+- Python 3.6
+- `numpy`
+
+## Acknowledgments
+- Our implementation is highly based on the existing Tool-chain named gcastle [pip link](https://pypi.org/project/gcastle/) and [paper link](https://arxiv.org/abs/2111.15155), which includes many gradient-based DAG structure learning methods.
+- Our implementation is also highly based on [NOTEARS-tensorflow](https://github.com/ignavierng/notears-tensorflow) and [MCSL](https://github.com/huawei-noah/trustworthyAI/tree/master/gcastle/castle/algorithms/gradient/mcsl/torch).
+
+## Recommendations
+- Notice that [NOTEARS-ADMM](https://arxiv.org/abs/2110.09356) is a concurrent and interesting work that also considers the same problem with our FedDAG. In NOTEARS-ADMM, ADMM is leveraged to jointly learn the graph. 
+- The baseline method of our FedDAG is [MCSL](https://arxiv.org/abs/1910.08527). Please read this paper if you have concerns about the basic modules of FedDAG.
+
+You are highly recommended to read these two papers and to cite them.
+
+```bibtex
+@inproceedings{Ng2022federated,
+  author = {Ng, Ignavier and Zhang, Kun},
+  title = {Towards Federated Bayesian Network Structure Learning with Continuous Optimization},
+  booktitle = {International Conference on Artificial Intelligence and Statistics},
+  year = {2022},
+}
+
+@inproceedings{ng2022masked,
+  title={Masked gradient-based causal structure learning},
+  author={Ng, Ignavier and Zhu, Shengyu and Fang, Zhuangyan and Li, Haoyang and Chen, Zhitang and Wang, Jun},
+  booktitle={Proceedings of the 2022 SIAM International Conference on Data Mining (SDM)},
+  pages={424--432},
+  year={2022},
+  organization={SIAM}
+}
+```
