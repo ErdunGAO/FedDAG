@@ -2,8 +2,8 @@ from logging import Logger
 import logging
 import sys
 import numpy as np
-from .masked_models.masked_nn import MaskedNN
-from .notears.notears import NoTears
+from .nonlinear.masked_nn import MaskedNN
+from .linear.notears import NoTears
 from trainers import ALTrainer, NoTears_ALTrainer
 from helpers.train_utils import callback_after_training
 from helpers.base import BaseLearner
