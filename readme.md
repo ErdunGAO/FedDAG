@@ -13,9 +13,13 @@ If you find it useful, please consider citing:
 ```
 
 ## Requirements
+- CUDA 10.0
+- cuDNN 7.4
+- Anaconda
 
-- Python 3.6
-- `numpy`
+Use `conda env create -f environment.yml` to create a `feddag_test_env` conda environment.
+
+Use [10.0-cudnn7-devel-ubuntu18.04](https://hub.docker.com/layers/nvidia/cuda/10.0-cudnn7-devel-ubuntu18.04/images/sha256-3780926c6209d27d62b2a0fb057b8b02f621fc02b0e3d6a724c1089885864202?context=explore) to create a container if running from docker.
 
 ## Acknowledgments
 - Our implementation is highly based on the existing Tool-chain named gcastle [pip link](https://pypi.org/project/gcastle/) and [paper link](https://arxiv.org/abs/2111.15155), which includes many gradient-based DAG structure learning methods.
