@@ -21,6 +21,9 @@ Use `conda env create -f environment.yml` to create a `feddag_test_env` conda en
 
 Use [10.0-cudnn7-devel-ubuntu18.04](https://hub.docker.com/layers/nvidia/cuda/10.0-cudnn7-devel-ubuntu18.04/images/sha256-3780926c6209d27d62b2a0fb057b8b02f621fc02b0e3d6a724c1089885864202?context=explore) to create a container if running from docker.
 
+## Examples
+After creating a new conda environment, you can run `bash test_run.sh` to test the codes. Our logging results of the `test_run.sh` is recorded in [log_example.txt](https://github.com/ErdunGAO/FedDAG/blob/main/log_example.txt). If you want to test our method with other scales of graphs, change the hyper-parameters according to settings provided in the Appendix.
+
 ## Acknowledgments
 - Our implementation is highly based on the existing Tool-chain named gcastle [pip link](https://pypi.org/project/gcastle/) and [paper link](https://arxiv.org/abs/2111.15155), which includes many gradient-based DAG structure learning methods.
 - Our implementation is also highly based on [NOTEARS-tensorflow](https://github.com/ignavierng/notears-tensorflow) and [MCSL](https://github.com/huawei-noah/trustworthyAI/tree/master/gcastle/castle/algorithms/gradient/mcsl/torch).
