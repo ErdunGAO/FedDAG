@@ -1,3 +1,8 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+from tensorflow.python.util import deprecation
+deprecation._PRINT_DEPRECATION_WARNINGS = False
+
 from models import AS_FedDAG, GS_FedDAG, AS_FedDAG_linear
 from datasets.simulation import property_generation
 from helpers.evaluation import MetricsDAG
