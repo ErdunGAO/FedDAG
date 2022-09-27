@@ -1,269 +1,90 @@
-   Started running experiments.
+Started running experiments.
 Generating data, maybe slow! You can pre-genrate the data.
-2022-09-26 13:26:07,917 Finished synthetic dataset
-2022-09-26 13:26:07,917 [INFO]  Finished synthetic dataset
+2022-09-27 11:23:06,233 Finished synthetic dataset
+2022-09-27 11:23:06,233 [INFO]  Finished synthetic dataset
 Begin running the mothod.....
-WARNING:tensorflow:From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/linalg/linalg_impl.py:283: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use tf.where in 2.0, which has the same broadcast rule as np.where
-2022-09-26 13:26:07,981 From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/linalg/linalg_impl.py:283: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use tf.where in 2.0, which has the same broadcast rule as np.where
-2022-09-26 13:26:07,981 [WARNING]  From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/linalg/linalg_impl.py:283: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use tf.where in 2.0, which has the same broadcast rule as np.where
-2022-09-26 13:26:10.594892: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
-2022-09-26 13:26:10.658344: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:19:00.0
-2022-09-26 13:26:10.659106: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:67:00.0
-2022-09-26 13:26:10.659822: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:68:00.0
-2022-09-26 13:26:10.660016: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
-2022-09-26 13:26:10.661050: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
-2022-09-26 13:26:10.661922: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
-2022-09-26 13:26:10.662164: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
-2022-09-26 13:26:10.663219: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
-2022-09-26 13:26:10.664137: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
-2022-09-26 13:26:10.666624: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
-2022-09-26 13:26:10.670861: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2
-2022-09-26 13:26:10.671157: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
-2022-09-26 13:26:10.676159: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3699850000 Hz
-2022-09-26 13:26:10.677476: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x563606240170 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
-2022-09-26 13:26:10.677529: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
-2022-09-26 13:26:10.998822: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5636071c31c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
-2022-09-26 13:26:10.998885: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
-2022-09-26 13:26:10.998904: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
-2022-09-26 13:26:10.998920: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
-2022-09-26 13:26:11.004740: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:19:00.0
-2022-09-26 13:26:11.005234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:67:00.0
-2022-09-26 13:26:11.005684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:68:00.0
-2022-09-26 13:26:11.005724: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
-2022-09-26 13:26:11.005734: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
-2022-09-26 13:26:11.005744: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
-2022-09-26 13:26:11.005753: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
-2022-09-26 13:26:11.005762: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
-2022-09-26 13:26:11.005771: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
-2022-09-26 13:26:11.005781: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
-2022-09-26 13:26:11.008596: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2
-2022-09-26 13:26:11.008636: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
-2022-09-26 13:26:11.010794: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
-2022-09-26 13:26:11.010814: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 2 
-2022-09-26 13:26:11.010823: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N Y Y 
-2022-09-26 13:26:11.010830: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   Y N Y 
-2022-09-26 13:26:11.010838: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 2:   Y Y N 
-2022-09-26 13:26:11.013130: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10482 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:19:00.0, compute capability: 6.1)
-2022-09-26 13:26:11.014162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10482 MB memory) -> physical GPU (device: 1, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:67:00.0, compute capability: 6.1)
-2022-09-26 13:26:11.015187: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10473 MB memory) -> physical GPU (device: 2, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:68:00.0, compute capability: 6.1)
 <----------------------------------->
-2022-09-26 13:26:11,555 This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 1.0
-2022-09-26 13:26:11,555 [INFO]  This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 1.0
-2022-09-26 13:26:12.613714: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
-2022-09-26 13:26:12.731110: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x56360a740480
-2022-09-26 13:26:12.731259: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
-2022-09-26 13:26:12.855624: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2022-09-27 11:23:09,347 This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 1.0
+2022-09-27 11:23:09,347 [INFO]  This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 1.0
 <----------------------------------->
-2022-09-26 13:26:42,278 This is the 2 iteration. h_loss is 0.27646446228027344, alpha is 0.27646446228027344, rho is 1.0
-2022-09-26 13:26:42,278 [INFO]  This is the 2 iteration. h_loss is 0.27646446228027344, alpha is 0.27646446228027344, rho is 1.0
+2022-09-27 11:23:40,376 This is the 2 iteration. h_loss is 0.27646446228027344, alpha is 0.27646446228027344, rho is 1.0
+2022-09-27 11:23:40,376 [INFO]  This is the 2 iteration. h_loss is 0.27646446228027344, alpha is 0.27646446228027344, rho is 1.0
 <----------------------------------->
-2022-09-26 13:28:39,601 This is the 3 iteration. h_loss is 0.021170616149902344, alpha is 21.447080612182617, rho is 1000.0
-2022-09-26 13:28:39,601 [INFO]  This is the 3 iteration. h_loss is 0.021170616149902344, alpha is 21.447080612182617, rho is 1000.0
+2022-09-27 11:25:39,055 This is the 3 iteration. h_loss is 0.021170616149902344, alpha is 21.447080612182617, rho is 1000.0
+2022-09-27 11:25:39,055 [INFO]  This is the 3 iteration. h_loss is 0.021170616149902344, alpha is 21.447080612182617, rho is 1000.0
 <----------------------------------->
-2022-09-26 13:29:38,299 This is the 4 iteration. h_loss is 0.0048656463623046875, alpha is 70.10354423522949, rho is 10000.0
-2022-09-26 13:29:38,299 [INFO]  This is the 4 iteration. h_loss is 0.0048656463623046875, alpha is 70.10354423522949, rho is 10000.0
+2022-09-27 11:26:38,439 This is the 4 iteration. h_loss is 0.0048656463623046875, alpha is 70.10354423522949, rho is 10000.0
+2022-09-27 11:26:38,439 [INFO]  This is the 4 iteration. h_loss is 0.0048656463623046875, alpha is 70.10354423522949, rho is 10000.0
 <----------------------------------->
-2022-09-26 13:30:37,103 This is the 5 iteration. h_loss is 0.00091552734375, alpha is 161.6562786102295, rho is 100000.0
-2022-09-26 13:30:37,103 [INFO]  This is the 5 iteration. h_loss is 0.00091552734375, alpha is 161.6562786102295, rho is 100000.0
+2022-09-27 11:27:37,944 This is the 5 iteration. h_loss is 0.00091552734375, alpha is 161.6562786102295, rho is 100000.0
+2022-09-27 11:27:37,944 [INFO]  This is the 5 iteration. h_loss is 0.00091552734375, alpha is 161.6562786102295, rho is 100000.0
 <----------------------------------->
-2022-09-26 13:31:35,832 This is the 6 iteration. h_loss is 0.00018310546875, alpha is 344.7617473602295, rho is 1000000.0
-2022-09-26 13:31:35,832 [INFO]  This is the 6 iteration. h_loss is 0.00018310546875, alpha is 344.7617473602295, rho is 1000000.0
+2022-09-27 11:28:37,342 This is the 6 iteration. h_loss is 0.00018310546875, alpha is 344.7617473602295, rho is 1000000.0
+2022-09-27 11:28:37,342 [INFO]  This is the 6 iteration. h_loss is 0.00018310546875, alpha is 344.7617473602295, rho is 1000000.0
 <----------------------------------->
-2022-09-26 13:32:34,557 This is the 7 iteration. h_loss is 4.00543212890625e-05, alpha is 745.3049602508545, rho is 10000000.0
-2022-09-26 13:32:34,557 [INFO]  This is the 7 iteration. h_loss is 4.00543212890625e-05, alpha is 745.3049602508545, rho is 10000000.0
+2022-09-27 11:29:36,727 This is the 7 iteration. h_loss is 4.00543212890625e-05, alpha is 745.3049602508545, rho is 10000000.0
+2022-09-27 11:29:36,727 [INFO]  This is the 7 iteration. h_loss is 4.00543212890625e-05, alpha is 745.3049602508545, rho is 10000000.0
 <----------------------------------->
-2022-09-26 13:33:33,235 This is the 8 iteration. h_loss is 7.62939453125e-06, alpha is 1508.2444133758545, rho is 100000000.0
-2022-09-26 13:33:33,235 [INFO]  This is the 8 iteration. h_loss is 7.62939453125e-06, alpha is 1508.2444133758545, rho is 100000000.0
+2022-09-27 11:30:36,096 This is the 8 iteration. h_loss is 7.62939453125e-06, alpha is 1508.2444133758545, rho is 100000000.0
+2022-09-27 11:30:36,096 [INFO]  This is the 8 iteration. h_loss is 7.62939453125e-06, alpha is 1508.2444133758545, rho is 100000000.0
 <----------------------------------->
-2022-09-26 13:34:32,100 This is the 9 iteration. h_loss is 1.9073486328125e-06, alpha is 3415.5930461883545, rho is 1000000000.0
-2022-09-26 13:34:32,100 [INFO]  This is the 9 iteration. h_loss is 1.9073486328125e-06, alpha is 3415.5930461883545, rho is 1000000000.0
-2022-09-26 13:35:30,846 Early stopping at 9-th iteration
-2022-09-26 13:35:30,846 [INFO]  Early stopping at 9-th iteration
-2022-09-26 13:35:30,906 run result:{'fdr': 0.125, 'tpr': 0.8235, 'fpr': 0.0714, 'shd': 4, 'nnz': 16, 'precision': 0.875, 'recall': 0.8235, 'F1': 0.8485, 'gscore': 0.7059}
-2022-09-26 13:35:30,906 [INFO]  run result:{'fdr': 0.125, 'tpr': 0.8235, 'fpr': 0.0714, 'shd': 4, 'nnz': 16, 'precision': 0.875, 'recall': 0.8235, 'F1': 0.8485, 'gscore': 0.7059}
+2022-09-27 11:31:35,614 This is the 9 iteration. h_loss is 1.9073486328125e-06, alpha is 3415.5930461883545, rho is 1000000000.0
+2022-09-27 11:31:35,614 [INFO]  This is the 9 iteration. h_loss is 1.9073486328125e-06, alpha is 3415.5930461883545, rho is 1000000000.0
+2022-09-27 11:32:35,071 Early stopping at 9-th iteration
+2022-09-27 11:32:35,071 [INFO]  Early stopping at 9-th iteration
+2022-09-27 11:32:35,127 run result:{'fdr': 0.125, 'tpr': 0.8235, 'fpr': 0.0714, 'shd': 4, 'nnz': 16, 'precision': 0.875, 'recall': 0.8235, 'F1': 0.8485, 'gscore': 0.7059}
+2022-09-27 11:32:35,127 [INFO]  run result:{'fdr': 0.125, 'tpr': 0.8235, 'fpr': 0.0714, 'shd': 4, 'nnz': 16, 'precision': 0.875, 'recall': 0.8235, 'F1': 0.8485, 'gscore': 0.7059}
 Generating data, maybe slow! You can pre-genrate the data.
-2022-09-26 13:36:58,604 Finished synthetic dataset
-2022-09-26 13:36:58,604 [INFO]  Finished synthetic dataset
+2022-09-27 11:34:02,101 Finished synthetic dataset
+2022-09-27 11:34:02,101 [INFO]  Finished synthetic dataset
 Begin running the mothod.....
-WARNING:tensorflow:From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
-Instructions for updating:
-If using Keras pass *_constraint arguments to layers.
-2022-09-26 13:36:58,636 From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
-Instructions for updating:
-If using Keras pass *_constraint arguments to layers.
-2022-09-26 13:36:58,636 [WARNING]  From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
-Instructions for updating:
-If using Keras pass *_constraint arguments to layers.
-WARNING:tensorflow:From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/linalg/linalg_impl.py:283: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use tf.where in 2.0, which has the same broadcast rule as np.where
-2022-09-26 13:36:59,261 From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/linalg/linalg_impl.py:283: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use tf.where in 2.0, which has the same broadcast rule as np.where
-2022-09-26 13:36:59,261 [WARNING]  From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/linalg/linalg_impl.py:283: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use tf.where in 2.0, which has the same broadcast rule as np.where
-2022-09-26 13:37:33.341147: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
-2022-09-26 13:37:33.364633: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3699850000 Hz
-2022-09-26 13:37:33.365996: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x560f9aa01370 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
-2022-09-26 13:37:33.366041: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
-2022-09-26 13:37:33.369728: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
-2022-09-26 13:37:33.744741: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x560f9ba1a0d0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
-2022-09-26 13:37:33.744800: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
-2022-09-26 13:37:33.744819: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
-2022-09-26 13:37:33.744835: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
-2022-09-26 13:37:33.751330: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:19:00.0
-2022-09-26 13:37:33.752524: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:67:00.0
-2022-09-26 13:37:33.753691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:68:00.0
-2022-09-26 13:37:33.754125: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
-2022-09-26 13:37:33.756739: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
-2022-09-26 13:37:33.758508: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
-2022-09-26 13:37:33.758914: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
-2022-09-26 13:37:33.760832: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
-2022-09-26 13:37:33.762508: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
-2022-09-26 13:37:33.767096: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
-2022-09-26 13:37:33.772096: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2
-2022-09-26 13:37:33.772158: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
-2022-09-26 13:37:33.774509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
-2022-09-26 13:37:33.774530: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 2 
-2022-09-26 13:37:33.774538: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N Y Y 
-2022-09-26 13:37:33.774543: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   Y N Y 
-2022-09-26 13:37:33.774549: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 2:   Y Y N 
-2022-09-26 13:37:33.776830: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10482 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:19:00.0, compute capability: 6.1)
-2022-09-26 13:37:33.777929: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10482 MB memory) -> physical GPU (device: 1, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:67:00.0, compute capability: 6.1)
-2022-09-26 13:37:33.778817: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10473 MB memory) -> physical GPU (device: 2, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:68:00.0, compute capability: 6.1)
 <----------------------------------->
-2022-09-26 13:37:41,886 This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 0.006
-2022-09-26 13:37:41,886 [INFO]  This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 0.006
-2022-09-26 13:37:52.313620: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
-2022-09-26 13:37:52.505443: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x560fb54a2a30
-2022-09-26 13:37:52.505574: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
-2022-09-26 13:37:52.622850: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2022-09-27 11:34:39,013 This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 0.006
+2022-09-27 11:34:39,013 [INFO]  This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 0.006
 <----------------------------------->
-2022-09-26 13:39:18,416 This is the 2 iteration. h_loss is 1.1821727752685547, alpha is 0.007093036651611328, rho is 0.006
-2022-09-26 13:39:18,416 [INFO]  This is the 2 iteration. h_loss is 1.1821727752685547, alpha is 0.007093036651611328, rho is 0.006
+2022-09-27 11:36:14,487 This is the 2 iteration. h_loss is 1.204463005065918, alpha is 0.007226778030395508, rho is 0.006
+2022-09-27 11:36:14,487 [INFO]  This is the 2 iteration. h_loss is 1.204463005065918, alpha is 0.007226778030395508, rho is 0.006
 <----------------------------------->
-2022-09-26 13:42:05,021 This is the 3 iteration. h_loss is 0.25653076171875, alpha is 0.02248488235473633, rho is 0.06
-2022-09-26 13:42:05,021 [INFO]  This is the 3 iteration. h_loss is 0.25653076171875, alpha is 0.02248488235473633, rho is 0.06
+2022-09-27 11:39:00,081 This is the 3 iteration. h_loss is 0.2752418518066406, alpha is 0.023741289138793947, rho is 0.06
+2022-09-27 11:39:00,081 [INFO]  This is the 3 iteration. h_loss is 0.2752418518066406, alpha is 0.023741289138793947, rho is 0.06
 <----------------------------------->
-2022-09-26 13:43:29,773 This is the 4 iteration. h_loss is 0.0, alpha is 0.02248488235473633, rho is 0.06
-2022-09-26 13:43:29,773 [INFO]  This is the 4 iteration. h_loss is 0.0, alpha is 0.02248488235473633, rho is 0.06
-2022-09-26 13:46:16,695 run result:{'fdr': 0.0, 'tpr': 1.0, 'fpr': 0.0, 'shd': 0, 'nnz': 17, 'precision': 1.0, 'recall': 1.0, 'F1': 1.0, 'gscore': 1.0}
-2022-09-26 13:46:16,695 [INFO]  run result:{'fdr': 0.0, 'tpr': 1.0, 'fpr': 0.0, 'shd': 0, 'nnz': 17, 'precision': 1.0, 'recall': 1.0, 'F1': 1.0, 'gscore': 1.0}
+2022-09-27 11:40:24,069 This is the 4 iteration. h_loss is 0.0, alpha is 0.023741289138793947, rho is 0.06
+2022-09-27 11:40:24,069 [INFO]  This is the 4 iteration. h_loss is 0.0, alpha is 0.023741289138793947, rho is 0.06
+2022-09-27 11:43:10,246 run result:{'fdr': 0.0, 'tpr': 1.0, 'fpr': 0.0, 'shd': 0, 'nnz': 17, 'precision': 1.0, 'recall': 1.0, 'F1': 1.0, 'gscore': 1.0}
+2022-09-27 11:43:10,246 [INFO]  run result:{'fdr': 0.0, 'tpr': 1.0, 'fpr': 0.0, 'shd': 0, 'nnz': 17, 'precision': 1.0, 'recall': 1.0, 'F1': 1.0, 'gscore': 1.0}
 Generating data, maybe slow! You can pre-genrate the data.
-2022-09-26 13:46:19,335 Finished synthetic dataset
-2022-09-26 13:46:19,335 [INFO]  Finished synthetic dataset
-2022-09-26 13:46:19,337 Finished synthetic dataset
-2022-09-26 13:46:19,337 [INFO]  Finished synthetic dataset
-2022-09-26 13:46:19,713 Finished synthetic dataset
-2022-09-26 13:46:19,713 [INFO]  Finished synthetic dataset
-2022-09-26 13:46:19,714 Finished synthetic dataset
-2022-09-26 13:46:19,714 [INFO]  Finished synthetic dataset
-2022-09-26 13:46:19,927 Finished synthetic dataset
-2022-09-26 13:46:19,927 [INFO]  Finished synthetic dataset
-2022-09-26 13:46:20,410 Finished synthetic dataset
-2022-09-26 13:46:20,410 [INFO]  Finished synthetic dataset
-2022-09-26 13:46:20,411 Finished synthetic dataset
-2022-09-26 13:46:20,411 [INFO]  Finished synthetic dataset
-2022-09-26 13:46:20,894 Finished synthetic dataset
-2022-09-26 13:46:20,894 [INFO]  Finished synthetic dataset
-2022-09-26 13:46:20,895 Finished synthetic dataset
-2022-09-26 13:46:20,895 [INFO]  Finished synthetic dataset
-2022-09-26 13:46:20,896 Finished synthetic dataset
-2022-09-26 13:46:20,896 [INFO]  Finished synthetic dataset
+2022-09-27 11:43:12,830 Finished synthetic dataset
+2022-09-27 11:43:12,830 [INFO]  Finished synthetic dataset
+2022-09-27 11:43:12,831 Finished synthetic dataset
+2022-09-27 11:43:12,831 [INFO]  Finished synthetic dataset
+2022-09-27 11:43:13,200 Finished synthetic dataset
+2022-09-27 11:43:13,200 [INFO]  Finished synthetic dataset
+2022-09-27 11:43:13,201 Finished synthetic dataset
+2022-09-27 11:43:13,201 [INFO]  Finished synthetic dataset
+2022-09-27 11:43:13,409 Finished synthetic dataset
+2022-09-27 11:43:13,409 [INFO]  Finished synthetic dataset
+2022-09-27 11:43:13,883 Finished synthetic dataset
+2022-09-27 11:43:13,883 [INFO]  Finished synthetic dataset
+2022-09-27 11:43:13,884 Finished synthetic dataset
+2022-09-27 11:43:13,884 [INFO]  Finished synthetic dataset
+2022-09-27 11:43:14,386 Finished synthetic dataset
+2022-09-27 11:43:14,386 [INFO]  Finished synthetic dataset
+2022-09-27 11:43:14,387 Finished synthetic dataset
+2022-09-27 11:43:14,387 [INFO]  Finished synthetic dataset
+2022-09-27 11:43:14,388 Finished synthetic dataset
+2022-09-27 11:43:14,388 [INFO]  Finished synthetic dataset
 Begin running the mothod.....
-WARNING:tensorflow:From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
-Instructions for updating:
-If using Keras pass *_constraint arguments to layers.
-2022-09-26 13:46:20,929 From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
-Instructions for updating:
-If using Keras pass *_constraint arguments to layers.
-2022-09-26 13:46:20,929 [WARNING]  From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
-Instructions for updating:
-If using Keras pass *_constraint arguments to layers.
-WARNING:tensorflow:From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/linalg/linalg_impl.py:283: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use tf.where in 2.0, which has the same broadcast rule as np.where
-2022-09-26 13:46:21,547 From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/linalg/linalg_impl.py:283: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use tf.where in 2.0, which has the same broadcast rule as np.where
-2022-09-26 13:46:21,547 [WARNING]  From /root/miniconda3/envs/feddag_test_env/lib/python3.7/site-packages/tensorflow_core/python/ops/linalg/linalg_impl.py:283: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use tf.where in 2.0, which has the same broadcast rule as np.where
-2022-09-26 13:46:53.748624: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
-2022-09-26 13:46:53.772638: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3699850000 Hz
-2022-09-26 13:46:53.773935: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e573304240 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
-2022-09-26 13:46:53.773980: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
-2022-09-26 13:46:53.777779: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
-2022-09-26 13:46:54.098561: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e5732b51c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
-2022-09-26 13:46:54.098605: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
-2022-09-26 13:46:54.098619: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
-2022-09-26 13:46:54.098630: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
-2022-09-26 13:46:54.102436: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:19:00.0
-2022-09-26 13:46:54.104181: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:67:00.0
-2022-09-26 13:46:54.104815: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
-name: NVIDIA GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
-pciBusID: 0000:68:00.0
-2022-09-26 13:46:54.105082: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
-2022-09-26 13:46:54.106453: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
-2022-09-26 13:46:54.107557: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
-2022-09-26 13:46:54.107863: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
-2022-09-26 13:46:54.109257: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
-2022-09-26 13:46:54.110492: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
-2022-09-26 13:46:54.113849: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
-2022-09-26 13:46:54.117034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2
-2022-09-26 13:46:54.117077: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
-2022-09-26 13:46:54.118837: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
-2022-09-26 13:46:54.118854: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 2 
-2022-09-26 13:46:54.118862: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N Y Y 
-2022-09-26 13:46:54.118868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   Y N Y 
-2022-09-26 13:46:54.118874: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 2:   Y Y N 
-2022-09-26 13:46:54.120645: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10482 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:19:00.0, compute capability: 6.1)
-2022-09-26 13:46:54.121453: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10482 MB memory) -> physical GPU (device: 1, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:67:00.0, compute capability: 6.1)
-2022-09-26 13:46:54.122228: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10473 MB memory) -> physical GPU (device: 2, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:68:00.0, compute capability: 6.1)
 <----------------------------------->
-2022-09-26 13:47:02,045 This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 0.006
-2022-09-26 13:47:02,045 [INFO]  This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 0.006
-2022-09-26 13:47:12.432567: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
-2022-09-26 13:47:12.646717: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x55e58dc25310
-2022-09-26 13:47:12.646841: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
-2022-09-26 13:47:12.762337: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2022-09-27 11:43:49,742 This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 0.006
+2022-09-27 11:43:49,742 [INFO]  This is the 1 iteration. h_loss is inf, alpha is 0.0, rho is 0.006
 <----------------------------------->
-2022-09-26 13:48:37,702 This is the 2 iteration. h_loss is 4.017141342163086, alpha is 0.024102848052978517, rho is 0.006
-2022-09-26 13:48:37,702 [INFO]  This is the 2 iteration. h_loss is 4.017141342163086, alpha is 0.024102848052978517, rho is 0.006
+2022-09-27 11:45:25,952 This is the 2 iteration. h_loss is 4.21091365814209, alpha is 0.02526548194885254, rho is 0.006
+2022-09-27 11:45:25,952 [INFO]  This is the 2 iteration. h_loss is 4.21091365814209, alpha is 0.02526548194885254, rho is 0.006
 <----------------------------------->
-2022-09-26 13:52:48,758 This is the 3 iteration. h_loss is 0.193634033203125, alpha is 0.14028326797485352, rho is 0.6
-2022-09-26 13:52:48,758 [INFO]  This is the 3 iteration. h_loss is 0.193634033203125, alpha is 0.14028326797485352, rho is 0.6
+2022-09-27 11:49:36,558 This is the 3 iteration. h_loss is 1.0452690124511719, alpha is 0.6524268894195557, rho is 0.6
+2022-09-27 11:49:36,558 [INFO]  This is the 3 iteration. h_loss is 1.0452690124511719, alpha is 0.6524268894195557, rho is 0.6
 <----------------------------------->
-2022-09-26 13:54:12,547 This is the 4 iteration. h_loss is 0.0, alpha is 0.14028326797485352, rho is 0.6
-2022-09-26 13:54:12,547 [INFO]  This is the 4 iteration. h_loss is 0.0, alpha is 0.14028326797485352, rho is 0.6
-2022-09-26 13:55:36,347 run result:{'fdr': 0.0556, 'tpr': 1.0, 'fpr': 0.0357, 'shd': 1, 'nnz': 18, 'precision': 0.9444, 'recall': 1.0, 'F1': 0.9714, 'gscore': 0.9412}
-2022-09-26 13:55:36,347 [INFO]  run result:{'fdr': 0.0556, 'tpr': 1.0, 'fpr': 0.0357, 'shd': 1, 'nnz': 18, 'precision': 0.9444, 'recall': 1.0, 'F1': 0.9714, 'gscore': 0.9412}
+2022-09-27 11:51:01,130 This is the 4 iteration. h_loss is 0.0, alpha is 0.6524268894195557, rho is 0.6
+2022-09-27 11:51:01,130 [INFO]  This is the 4 iteration. h_loss is 0.0, alpha is 0.6524268894195557, rho is 0.6
+2022-09-27 11:52:23,243 run result:{'fdr': 0.0556, 'tpr': 1.0, 'fpr': 0.0357, 'shd': 1, 'nnz': 18, 'precision': 0.9444, 'recall': 1.0, 'F1': 0.9714, 'gscore': 0.9412}
+2022-09-27 11:52:23,243 [INFO]  run result:{'fdr': 0.0556, 'tpr': 1.0, 'fpr': 0.0357, 'shd': 1, 'nnz': 18, 'precision': 0.9444, 'recall': 1.0, 'F1': 0.9714, 'gscore': 0.9412}
