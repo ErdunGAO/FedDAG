@@ -4,11 +4,14 @@ This repository contains an implementation of the federated DAG structure learni
 
 If you find it useful, please consider citing:
 ```bibtex
-@article{gao2021federated,
-  title={Federated Causal Discovery},
-  author={Gao, Erdun and Chen, Junjia and Shen, Li and Liu, Tongliang and Gong, Mingming and Bondell, Howard},
-  journal={arXiv preprint arXiv:2112.03555},
-  year={2021}
+@article{
+gao2023feddag,
+title={Fed{DAG}: Federated {DAG} Structure Learning},
+author={Erdun Gao and Junjia Chen and Li Shen and Tongliang Liu and Mingming Gong and Howard Bondell},
+journal={Transactions of Machine Learning Research},
+year={2023},
+url={https://openreview.net/forum?id=MzWgBjZ6Le},
+note={}
 }
 ```
 
